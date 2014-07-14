@@ -4,7 +4,7 @@
   <div class="wrapper">
     <div class="inner light">
       <div class="page-intro clearfix">
-        <h1 class="page-title alignleft">Blog</h1>
+        <h1 class="page-title alignleft"><?php the_title(); ?></h1>
       </div>
       
       <!-- Begin Blog -->
@@ -17,7 +17,6 @@
           <?php } ?>
           
           <div class="post-content">
-            <h2><?php the_title(); ?></h2>
             
             <div class="meta">
             <span class="date"><?php the_time('d M Y') ?></span>

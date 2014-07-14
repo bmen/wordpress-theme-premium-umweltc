@@ -1,3 +1,4 @@
+<?php /* Template Name: Page without Sidebar */ ?>
 <?php get_header(); ?>
 
   <!-- Begin Wrapper -->
@@ -6,7 +7,6 @@
       <div class="page-intro clearfix">
         <h1 class="page-title"><?php the_title(); ?></h1>
       </div>
-	  <section class="content full">
       <?php // Start Loop
             while (have_posts()) : the_post();
 							
@@ -14,11 +14,7 @@
 								
 			endwhile;
 			// End Loop
-	?>
-	      </section>
-	<!-- Begin Sidebar -->
-			<?php get_sidebar(); ?>
-	    <!-- End Sidebar -->
+	?>	
     <div class="clear"></div>
       
     </div>

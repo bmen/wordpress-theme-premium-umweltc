@@ -1,6 +1,6 @@
     <div class="inner light">
       <div class="page-intro clearfix">
-        <h1 class="page-title alignleft"><?php the_title(); ?></h1>
+        <h1 class="page-title alignleft">Blog</h1>
       </div>
       
       <!-- Begin Blog -->
@@ -27,7 +27,7 @@
             
             <p><?php content('50'); ?></p>
             
-            <a href="<?php echo get_permalink(); ?>" class="more">Continue reading →</a>
+            <a href="<?php echo get_permalink(); ?>" class="more">Weiterlesen →</a>
           </div>
           <div class="clear"></div>
         </div>

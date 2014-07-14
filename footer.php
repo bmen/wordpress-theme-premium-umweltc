@@ -7,7 +7,7 @@
   <div class="subfooter"> 
     <!-- Begin Inner -->
     <div class="inner">
-      <p><?php echo vp_option('copyright'); ?> <a href="http://themesmarts.com/">Premium theme by ThemeSmarts</a></p>
+      <p><?php echo vp_option('copyright'); ?> | <a href="/impressum">Impressum</a></p>
       <ul class="social">
       
       	<?php if( vp_option('enablerss') == '1' ){ ?>

@@ -14,7 +14,7 @@
       <div id="portfolio">
       
         <ul class="filter">
-          <li><a class="active" href="#" data-filter="*">All</a></li>
+          <li><a class="active" href="#" data-filter="*">Alle</a></li>
           <?php
 			$terms = get_terms("portfolio");
 			$count = count($terms);
@@ -43,7 +43,7 @@
           <li class="item <?php echo $the_term; ?>">
           
             <div class="overlay">
-            <a href="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>" class="fancybox-media">
+            <a href="<?php echo get_permalink(); ?>">
             <?php the_post_thumbnail('portfolio-fourcol'); ?>
             </a>
             </div>
@@ -51,7 +51,7 @@
             <div class="info">
               <h4 class="long-lined"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
               <p><?php content( '10' ); ?></p>
-              <a href="<?php echo get_permalink(); ?>" class="more">View Details →</a>
+              <a href="<?php echo get_permalink(); ?>" class="more">Weitere Informationen →</a>
             </div>
               
           	</li>

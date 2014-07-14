@@ -1,0 +1,404 @@
+/* ======================================= General Settings ======================================= */
+body {
+    background: none repeat scroll 0 0 #D9E1E9;
+    color: #616161;
+}
+.wrapper {
+    margin: -240px auto 0;
+}
+.top-wrapper .inner {
+    padding-top:0;
+    width:1122px;
+}
+header .logo {
+	padding-top:10px;
+	width:60%;
+}
+header .search-contact {
+	float:right;
+	width:40%;
+	margin-top:20px;
+}
+header .search-contact form#searchform {
+	width:70%;
+	float:left;
+}
+header .search-contact ul.social {
+	width:30%;
+	float:left;
+}
+
+header .search-contact ul.social a i {
+	color:#0034c3;
+}
+header .search-contact ul.social li {
+	margin:0;
+}
+.wp-caption-text {
+    background: none repeat scroll 0 0 #BFD841;
+    font-size: 12px;
+    margin-right: 10px;
+    padding: 5px;
+}
+header .menu {
+    float: none;
+    clear:both;
+}
+.menu ul {
+    margin: 0;
+}
+.menu ul li {
+    margin: 0;
+    padding:0;
+	width:221px;
+	height:60px;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 0;
+	-moz-border-radius-bottomleft: 0;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.menu ul li a {
+	background:url("/wp-content/uploads/2014/05/menu_background.png") 0 0 repeat !important;
+	transition: none;
+	width:100%;
+	height:100%;
+	display:block;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 0;
+	-moz-border-radius-bottomleft: 0;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.menu ul li a:hover,
+.menu ul li a:focus,
+.menu ul li a:active,
+.menu ul li.current-menu-item a {
+}
+.menu ul li#menu-item-34 {
+	background:url("/wp-content/uploads/2014/02/ueber-uns.jpg") 0 0 no-repeat;
+}
+.menu ul li#menu-item-33 {
+	background-image:url("/wp-content/uploads/2014/05/umweltschutz.jpg");
+}
+.menu ul li#menu-item-32 {
+	background-image:url("/wp-content/uploads/2014/05/landschaftsplanung.jpg");
+}
+.menu ul li#menu-item-31 {
+	background-image:url("/wp-content/uploads/2014/05/bodenkunde.jpg");
+}
+.menu ul li#menu-item-30 a {
+	background-image:url("/wp-content/uploads/2014/02/arbeitsschutz_vorlage.jpg");
+}
+.menu ul li ul {
+	padding:0;
+	width: 222px;
+}
+.menu ul li ul li {
+	height:auto;
+	border-radius:0;
+}
+
+.menu ul li ul li,
+.menu ul li.current-menu-item ul li {
+	background:url("/wp-content/uploads/2014/05/menu_background.png") 0 0 repeat;
+}
+.menu ul li ul li a,
+.menu ul li.current-menu-item ul li a {
+	background:none !important;
+	height:auto;
+	padding: 10px 20px;
+	color:#fff;
+}
+
+.menu ul li#menu-item-34 ul {
+	background:url("/wp-content/uploads/2014/02/submenu_ueber-uns.jpg") 0 0 no-repeat;
+}
+.menu ul li#menu-item-33 ul {
+	background:url("/wp-content/uploads/2014/05/umweltschutz_submenu.jpg") 0 0 no-repeat;
+}
+.menu ul li#menu-item-32 ul {
+	background:url("/wp-content/uploads/2014/05/landschaftsplanung_submenu.jpg") 0 0 no-repeat;
+}
+.menu ul li#menu-item-31 ul {
+	background:url("/wp-content/uploads/2014/05/bodenkunde_submenu.jpg") 0 0 no-repeat;
+}
+/* ======================================= Content ======================================= */
+.content ul li {
+	margin-left:15px;
+	list-style-type:disc;
+}
+/* ======================================= Widgets ======================================= */
+.sidebox {
+    border-top:0;
+}
+.sidebox ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    margin-bottom:10px;
+    padding-bottom:10px;
+}
+.sidebox ul li.all-events-link {
+	border-bottom:0;
+}
+
+/* ======================================= Main Primary Color ======================================= */
+
+a:hover { color: #85A71E; }
+
+a.button:hover,
+.forms fieldset #btn-submit:hover,
+.comment-form #btn-submit:hover,
+.page-navi ul li a:hover,
+.page-navi ul li a.current {
+    background: #85A71E
+}
+
+.top-wrapper {
+    background: #fff;
+}
+
+footer {
+    background: #85A71E;
+}
+
+.tp-caption.navy-bg {
+    background: #85A71E;
+}
+
+
+/* ======================================= Footer Color ======================================= */
+/*
+Must be a darker color paired with primary color
+*/
+.subfooter {
+    background: #619c45;
+    color: #fff;
+    -webkit-border-bottom-right-radius: 70px;
+	-moz-border-radius-bottomright: 70px;
+	border-bottom-right-radius: 70px;
+}
+
+footer a, .subfooter a {
+    color: #fff;
+}
+
+.social a i {
+    color: #6a8517;
+	}
+
+/* ======================================= Base Secondary Color ======================================= */
+
+a { color: #BFD841; }
+
+h2.post-title a:hover { color: #BFD841; }
+
+a.button,
+.forms fieldset #btn-submit,
+.comment-form #btn-submit,
+.page-navi ul li a {
+    background-color: #BFD841;
+	color:#FFFFFF;
+}
+
+a.button.navy:hover { background: #BFD841; }
+
+ul.unordered li:before { color: #BFD841; }
+
+.lite1 {
+    color: #BFD841;
+    border-bottom: 1px dotted #BFD841;
+}
+
+footer a:hover,
+.subfooter a:hover {
+    color: #BFD841
+}
+
+.menu ul li a:hover {
+    color: #BFD841;
+}
+
+.menu ul li.active a,
+.menu ul li.current-menu-item a,
+.menu ul li a.selected {
+    color: #BFD841;
+}
+
+.menu ul li ul li,
+.menu ul li.active li,
+.menu ul li.current-menu-item li {
+    color: #BFD841;
+}
+
+.menu ul li.active ul li a:hover,
+.menu ul li.current-menu-item ul li a:hover,
+.menu ul li ul li a:hover {
+    color: #BFD841
+}
+
+.tp-caption.red-bg { background: #BFD841; }
+
+.tp-caption i { color: #BFD841; }
+
+.tp-bullets.simplebullets.round .bullet.selected,
+.tp-bullets.simplebullets.round .bullet:hover {
+    background-color: #BFD841
+}
+
+.tparrows:hover { background-color: #BFD841; }
+
+.items li .info h4 a:hover {color: #BFD841; }
+
+.filter li a:hover {background: #BFD841; }
+
+.filter li a.active {
+    background: #BFD841;
+    border-color: #BFD841 transparent; /* changed hover value */
+}
+
+.sidebox.widget .post-list li a:hover { color: #BFD841; }
+
+i.contact { color: #BFD841; }
+
+
+#twitter em a:hover { color: #BFD841; }
+
+
+#twitter ul li:before { color: #BFD841; }
+
+
+.tab a:hover { background: #BFD841; }
+
+
+.tab a.active {
+    background: #BFD841;
+    border-color: #BFD841 transparent; /* changed hover value */
+}
+
+
+.toggle h4.title:hover,
+.toggle h4.title.active {
+    background-color: #BFD841;
+    color: #FFF;
+}
+
+
+ul.latest li .info .date { background-color: #BFD841; }
+
+
+ul.latest li .info .date:before { border-bottom: 5px solid #BFD841; }
+
+
+ul.latest li .text h4 a:hover { color: #BFD841; }
+
+
+.post .post-content .meta a:hover { color: #BFD841; }
+
+
+.post h2 a:hover { color: #BFD841 }
+
+
+.navigation a i { background-color: #BFD841; }
+
+
+#comments .info h2 a:hover { color: #BFD841 }
+
+
+#comments a.reply-link:hover { color: #BFD841 }
+
+
+
+
+/* ======================================= Image Overlay/Hover Color ======================================= */
+.overlay a .more {
+    background: rgba(191, 216, 65, 0.92);
+}
+
+/* ======================================= Plugin: Events Manager ======================================= */
+#em-wrapper p {
+	height:0;
+	margin:0;
+	padding:0;
+}
+table.events-table {
+	width:100%;
+}
+table.events-table th {
+	text-align:left;
+	padding:10px;
+	background:rgba(0, 0, 0, 0.15);
+}
+table.events-table th.event-time {
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	border-top-left-radius: 10px;
+}
+table.events-table th.event-description {
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-right-radius: 10px;
+}
+table.events-table tbody tr {
+	border-bottom:1px rgba(0, 0, 0, 0.15) solid;
+}
+table.events-table tbody tr:last-child {
+	border-bottom:0;
+}
+table.events-table tbody td div.date-time {
+	background: none repeat scroll 0 0 #BFD841;
+    border-radius: 5px;
+    margin: 25px 10px;
+    padding: 5px 0;
+    text-align: center;
+    width: 85%;
+}
+table.events-table tbody td a {
+	font-size:18px;
+}
+.event .meta,
+.location .meta {
+	display:none;
+}
+
+/* ======================================= Plugin: Events Manager ======================================= */
+.wpcf7-form input, .wpcf7-form textarea {
+    background-color: #F5F5F5;
+    border: 1px solid #E2E2E2;
+    color: #616161;
+    line-height: 1;
+    margin: 0;
+    padding: 3px 10px 5px;
+    resize: none;
+    transition: all 200ms ease-in 0s;
+}
+.wpcf7-form input {
+	height: 35px;
+}
+.wpcf7-form input[type="submit"] {
+	background-color: #BFD841;
+    color: #FFFFFF;
+    border: medium none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    padding: 4px 18px;
+    transition: all 200ms ease-in 0s;
+    width: auto;
+}

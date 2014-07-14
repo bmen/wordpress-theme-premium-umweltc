@@ -1,4 +1,9 @@
-  	<?php if( vp_option('slider_enable') == '1'){ ?>
+<?php /* Template Name: Homepage with Sidebar and Banner */ ?>
+<?php get_header(); ?>
+
+<!-- Begin Wrapper -->
+  <div class="wrapper">
+  	  	<?php if( vp_option('slider_enable') == '1'){ ?>
     <div class="inner light">
       <div class="bannercontainer">
         <div class="banner">
@@ -13,7 +18,7 @@
             <?php if( vp_metabox('slider_option.slider_position') == 'left'){ ?>
             
             <!-- Left -->
-            <li data-transition="random">
+            <li data-transition="fade">
             <?php the_post_thumbnail('slider'); ?>
             
             <div class="caption sft navy-bg" data-x="70" data-y="70" data-speed="300" data-start="1500" data-easing="easeOutExpo">
@@ -31,7 +36,7 @@
            <?php }elseif( vp_metabox('slider_option.slider_position') == 'right'){ ?>
            
            <!-- right -->
-            <li data-transition="random">
+            <li data-transition="fade">
             <?php the_post_thumbnail('slider'); ?>
             
             <div class="caption navy-bg sft" data-x="600" data-y="80" data-speed="300" data-start="1500" data-easing="easeOutExpo">
@@ -91,7 +96,7 @@
         <i class="<?php echo vp_metabox('service_option.service_icon') ?> special"></i>
           <div class="info">
             <h3 class="lined"><?php the_title(); ?></h3>
-            <p>Donec elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum ligula porta felis cras ridiculus dapibus, aenean eu leo quam.</p>
+            <p><?php echo vp_metabox('service_option.service_text') ?></p>
           </div>
         </div>
         <?php echo (($wp_query->current_post%2==0)?'':'<br>'); ?>
@@ -102,11 +107,9 @@
       </div>
     </div>
     <?php } ?>
-    
-
-    <?php if( vp_option('custom_enable') == '1'){ ?>
     <!-- Custom Homepage -->
     <div class="inner <?php echo vp_option('page_color'); ?>">
+    	<section class="content full">
     
         <?php
 	  	$custom_page = vp_option('custom_page_id');		
@@ -118,10 +121,43 @@
 			
 			endwhile;
 		?>
+		</section>
         <!-- Begin Sidebar -->
-      <?php get_sidebar(); ?>
-      <!-- End Sidebar -->
+			<?php get_sidebar(); ?>
+	    <!-- End Sidebar -->
     <div class="clear"></div>
     </div>
-    <!-- End Custom Homepage -->
-    <?php } ?>
+    <!-- End Custom Homepage -->    
+     <div class="inner dark">
+      <h3>Aktuelle Projekte <a style="font-size:16px;" href="/projekte">(Alle Projekte)</a></h3>
+      <div class="grid-wrapper">
+      <ul class="items">
+      
+      <?php $args = array( 'numberposts' => 4, 'order'=> 'DESC', 'post_type' => 'portfolio', 'exclude' => get_the_ID() );
+			  $postslist = get_posts( $args );
+			  foreach ($postslist as $post) :  setup_postdata($post);
+		?>
+      
+        <li class="item">
+        
+          <div class="overlay">
+          <a href="<?php echo get_permalink(); ?>">
+          <?php the_post_thumbnail('portfolio-fourcol'); ?>
+          </a>
+          </div>
+          
+          <div class="info">
+            <h4 class="long-lined"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
+            <p><?php content( '10' ); ?></p>
+            <a href="<?php echo get_permalink(); ?>" class="more">Weitere Informationen →</a> </div>
+        </li>
+        
+        <?php wp_reset_query(); endforeach; ?>
+        
+      </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End Wrapper -->
+  
+<?php get_footer(); ?>

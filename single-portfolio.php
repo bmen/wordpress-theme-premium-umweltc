@@ -11,6 +11,7 @@
       <div class="page-intro clearfix">
         <h1 class="page-title alignleft"><?php the_title(); ?></h1>
       </div>
+      <!--
       <div class="portfoliowide-bannercontainer">
         <div class="portfoliowide-banner">
           <ul>
@@ -54,26 +55,26 @@
           <div class="tp-bannertimer tp-bottom"></div>
         </div>
       </div>
+      -->
       <section class="content">
         <?php the_content(); ?>
       </section>
       <div class="item-details">
         <ul class="item-info">
-          <li><span class="lite1">Date:</span> <?php the_date('d / M / Y'); ?></li>
-          <li><span class="lite1">Categories:</span><?php echo get_the_term_list($post->ID, 'portfolio', '', ', ', ''); ?></li>
+          <li><span class="lite1">Datum:</span> <?php the_date('d. M Y'); ?></li>
           <?php if( vp_metabox('portfolio_option.client') != ''){ ?>
-          <li><span class="lite1">Client:</span><?php echo vp_metabox('portfolio_option.client'); ?></li>
+          <li><span class="lite1">Auftraggeber:</span><?php echo vp_metabox('portfolio_option.client'); ?></li>
           <?php } ?>
         </ul>
         <?php if( vp_metabox('portfolio_option.client_link') != '' && vp_metabox('portfolio_option.client_link') != 'http://'){ ?>
-        <a href="<?php echo vp_metabox('portfolio_option.client_link'); ?>" class="button" target="_blank">Launch Project</a> 
+        <a href="<?php echo vp_metabox('portfolio_option.client_link'); ?>" class="button" target="_blank">Projektseite</a> 
         <?php } ?>
         </div>
       <div class="clear"></div>
     </div>
     
     <div class="inner dark">
-      <h3>Recent Posts</h3>
+      <h3>Aktuelle Projekte</h3>
       <div class="grid-wrapper">
       <ul class="items">
       
@@ -85,7 +86,7 @@
         <li class="item">
         
           <div class="overlay">
-          <a href="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>" class="fancybox-media">
+          <a href="<?php echo get_permalink(); ?>">
           <?php the_post_thumbnail('portfolio-fourcol'); ?>
           </a>
           </div>
@@ -93,7 +94,7 @@
           <div class="info">
             <h4 class="long-lined"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
             <p><?php content( '10' ); ?></p>
-            <a href="<?php echo get_permalink(); ?>" class="more">View Details →</a> </div>
+            <a href="<?php echo get_permalink(); ?>" class="more">Weitere Informationen →</a> </div>
         </li>
         
         <?php wp_reset_query(); endforeach; ?>

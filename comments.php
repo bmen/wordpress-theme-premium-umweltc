@@ -6,11 +6,11 @@ $args = array(
 	'title_reply' => __( '','textdomain_techblog' ),
 	'title_reply_to' => __( 'Leave a Reply to %s','textdomain_techblog' ),
 	'cancel_reply_link' => __( 'Cancel Reply','textdomain_techblog' ),
-	'label_submit' => __( 'Send Comment','textdomain_techblog' ),
+	'label_submit' => __( 'Kommentar speichern','textdomain_techblog' ),
 			   
 	'comment_field' => '
 		<div class="message-field">
-		<textarea cols="60" rows="5" name="comment" id="msg" class="text-input" placeholder="Message"></textarea><br>
+		<textarea cols="60" rows="5" name="comment" id="msg" class="text-input" placeholder="Kommentar"></textarea><br>
 		</div>
 		',
 		   
@@ -27,19 +27,19 @@ $args = array(
 		
 	'author' => '
 	<div class="name-field">
-	<input type="text" name="author" id="name" size="50" class="text-input" placeholder="Enter Name" ' . $aria_req . ' />
+	<input type="text" name="author" id="name" size="50" class="text-input" placeholder="Name" ' . $aria_req . ' />
 	</div>
 	',
 			
 	'email' => '
 	<div class="email-field">
-	<input type="text" name="email" id="email" size="50" class="text-input" placeholder="Enter Email" ' . $aria_req . ' />
+	<input type="text" name="email" id="email" size="50" class="text-input" placeholder="E-mail" ' . $aria_req . ' />
 	</div>
 	',
 		
 	'url' => '
 	<div class="website-field">
-	<input id="url" class="text-input" name="url" type="text" placeholder="Enter Website URL" />
+	<input id="url" class="text-input" name="url" type="text" placeholder="Link zur eigenen Website" />
 	</div>
 	'
 
@@ -65,6 +65,6 @@ $args = array(
 
 <!-- Begin Form -->
 <div class="comment-form-wrapper">
-<h3>Let your voice be heard</h3>
+<h3>Teile uns mit was du zu sagen hast</h3>
 <?php comment_form( $args ); ?>
 </div>

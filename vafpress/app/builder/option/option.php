@@ -57,6 +57,10 @@ return array(
 							'value' => 'purple',
 							'label' => __('Purple', 'premium_textdomain'),
 						),
+						array(
+							'value' => 'umweltconsulting',
+							'label' => __('Umweltconsulting', 'premium_textdomain'),
+						),
 					),
 					'default' => array(
 						'red',
